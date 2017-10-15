@@ -1,26 +1,23 @@
 package com.example.administrator.coolweathertest.bean;
 
-import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Generated;
+
+import org.litepal.crud.DataSupport;
 
 /**
  * Created by Administrator on 2017/10/11.
  */
 
-@Entity
-public class City {
+public class City extends DataSupport{
     private int id;
     private String cityName;
     private int cityCode;
     private int cityceId;
-    @Generated(hash = 647729505)
     public City(int id, String cityName, int cityCode, int cityceId) {
         this.id = id;
         this.cityName = cityName;
         this.cityCode = cityCode;
         this.cityceId = cityceId;
     }
-    @Generated(hash = 750791287)
     public City() {
     }
     public int getId() {
